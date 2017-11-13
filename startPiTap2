@@ -1,7 +1,7 @@
 #!/bin/bash
 brctl addbr bridge0
-brctl addif bridge0 eth0
 brctl addif bridge0 eth1
+brctl addif bridge0 eth2
 
 # Zero the IP address on the interfaces
 ifconfig eth1 0.0.0.0
